@@ -28,11 +28,11 @@ class Queue {
       this.head = new ListNode(value);
       return this;
     }
-    let shop = this.head;
+    let shop= this.head;
 
 
     while (shop.next) {
-    shop = shop.next;
+    shop=shop.next;
     }
     shop.next = new ListNode(value);
 
@@ -40,9 +40,9 @@ class Queue {
   }
 
   dequeue() {
-    const market = this.head.value;
+    const market =this.head.value;
 
-    this.head = this.head.next;
+    this.head= this.head.next;
 
     return market;
   }
